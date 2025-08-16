@@ -55,9 +55,9 @@ src/
 - │     ├── UsuarioDAO.java # Acceso a datos de usuarios
 - │     └── PrestamosDAO.java # Manejo de préstamos y penalizaciones
 - │── ui/
--      ├── PanelCatalogo.java    # Catálogo de libros
--      ├── PanelUsuario.java     # Área de usuario (préstamos y devoluciones)
--      └── PanelAdmin.java       # Panel de administración (control general)
+      ├── PanelCatalogo.java    # Catálogo de libros
+      ├── PanelUsuario.java     # Área de usuario (préstamos y devoluciones)
+      └── PanelAdmin.java       # Panel de administración (control general)
 
 ------------------------------------------------------------------
 
