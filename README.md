@@ -44,20 +44,20 @@ Esta es una aplicación de escritorio desarrollada en Java con Swing que simula 
 
 # Estructura del proyecto
 src/
-│── Main.java             # Clase principal, ejecuta la aplicación
-│── db.java               # Clase de conexión a la base de datos
-│── models/
-│     ├── Libro.java      # Modelo de datos: representa un libro
-│     ├── Usuario.java    # Modelo de datos: representa un usuario
-│     └── Prestamo.java   # Modelo de datos: representa un préstamo
-│── dao/
-│     ├── LibrosDAO.java  # Acceso a datos de libros, control de stock
-│     ├── UsuarioDAO.java # Acceso a datos de usuarios
-│     └── PrestamosDAO.java # Manejo de préstamos y penalizaciones
-│── ui/
-      ├── PanelCatalogo.java    # Catálogo de libros
-      ├── PanelUsuario.java     # Área de usuario (préstamos y devoluciones)
-      └── PanelAdmin.java       # Panel de administración (control general)
+- │── Main.java             # Clase principal, ejecuta la aplicación
+- │── db.java               # Clase de conexión a la base de datos
+- │── models/
+- │     ├── Libro.java      # Modelo de datos: representa un libro
+- │     ├── Usuario.java    # Modelo de datos: representa un usuario
+- │     └── Prestamo.java   # Modelo de datos: representa un préstamo
+- │── dao/
+- │     ├── LibrosDAO.java  # Acceso a datos de libros, control de stock
+- │     ├── UsuarioDAO.java # Acceso a datos de usuarios
+- │     └── PrestamosDAO.java # Manejo de préstamos y penalizaciones
+- │── ui/
+-      ├── PanelCatalogo.java    # Catálogo de libros
+-      ├── PanelUsuario.java     # Área de usuario (préstamos y devoluciones)
+-      └── PanelAdmin.java       # Panel de administración (control general)
 
 ------------------------------------------------------------------
 
@@ -86,11 +86,13 @@ La aplicación está dividida en tres secciones principales:
 - Compila y ejecuta el archivo Main.java:
       javac Main.java
       java Main
+  
+------------------------------------------------------------------
 
-Futuras mejoras
+# Futuras mejoras
 
-Implementar autenticación de usuarios con roles (admin / lector).
+- Implementar autenticación de usuarios con roles (admin / lector).
 
-Reportes exportables (PDF o Excel) sobre préstamos y penalizaciones.
+- Reportes exportables (PDF o Excel) sobre préstamos y penalizaciones.
 
-Notificaciones de devolución próxima mediante correo electrónico.
+- Notificaciones de devolución próxima mediante correo electrónico.
