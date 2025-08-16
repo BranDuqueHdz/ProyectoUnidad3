@@ -1,47 +1,48 @@
 # ProyectoUnidad3
-Biblioteca Digital - Java Swing + MySQL
+# Biblioteca Digital - Java Swing + MySQL
 
 Esta es una aplicación de escritorio desarrollada en Java con Swing que simula el funcionamiento de una biblioteca digital. El sistema permite gestionar libros, usuarios y préstamos de forma concurrente, controlando la disponibilidad de ejemplares y aplicando penalizaciones en caso de retraso.
 
-Características principales
+------------------------------------------------------------------
 
-Gestión de usuarios: registro y administración de los lectores.
+# Características principales
 
-Gestión de libros: agregar, listar y actualizar stock de libros.
+- Gestión de usuarios: registro y administración de los lectores.
+  
+- Gestión de libros: agregar, listar y actualizar stock de libros.
+  
+- Préstamos de libros:
+      - Crear un préstamo seleccionando usuario y libro.
+      -Marcar préstamos como devueltos.
+      - Control de stock en tiempo real (evita que dos usuarios tomen el mismo libro al mismo tiempo).
 
-Préstamos de libros:
+- Penalizaciones: cálculo automático de penalización en caso de devoluciones con atraso.
+  
+- Visualización de datos:
+      - Lista de préstamos activos y devueltos.
+      - Historial de penalizaciones.
 
-Crear un préstamo seleccionando usuario y libro.
+- Concurrencia controlada mediante sincronización en los métodos de actualización de stock.
 
-Marcar préstamos como devueltos.
+------------------------------------------------------------------
 
-Control de stock en tiempo real (evita que dos usuarios tomen el mismo libro al mismo tiempo).
+# Tecnologías utilizadas
 
-Penalizaciones: cálculo automático de penalización en caso de devoluciones con atraso.
+- Java 17+
 
-Visualización de datos:
+- Swing (para la interfaz gráfica de usuario)
 
-Lista de préstamos activos y devueltos.
+- MySQL (base de datos relacional para usuarios, libros y préstamos)
 
-Historial de penalizaciones.
+- JDBC (conexión entre Java y la base de datos)
 
-Concurrencia controlada mediante sincronización en los métodos de actualización de stock.
+- POO (Programación Orientada a Objetos)
 
-Tecnologías utilizadas
+- Manejo de concurrencia con synchronized
+  
+------------------------------------------------------------------
 
-Java 17+
-
-Swing (para la interfaz gráfica de usuario)
-
-MySQL (base de datos relacional para usuarios, libros y préstamos)
-
-JDBC (conexión entre Java y la base de datos)
-
-POO (Programación Orientada a Objetos)
-
-Manejo de concurrencia con synchronized
-
-Estructura del proyecto
+# Estructura del proyecto
 src/
 │── Main.java             # Clase principal, ejecuta la aplicación
 │── db.java               # Clase de conexión a la base de datos
@@ -58,30 +59,33 @@ src/
       ├── PanelUsuario.java     # Área de usuario (préstamos y devoluciones)
       └── PanelAdmin.java       # Panel de administración (control general)
 
-Interfaz de usuario
+------------------------------------------------------------------
+
+# Interfaz de usuario
 
 La aplicación está dividida en tres secciones principales:
 
-Catálogo de Libros: muestra todos los libros disponibles y su stock.
+- Catálogo de Libros: muestra todos los libros disponibles y su stock.
 
-Área de Usuario: permite a los usuarios solicitar y devolver libros.
+- Área de Usuario: permite a los usuarios solicitar y devolver libros.
 
-Panel de Administración: muestra todos los préstamos activos, devoluciones, historial de penalizaciones y estadísticas generales.
+- Panel de Administración: muestra todos los préstamos activos, devoluciones, historial de penalizaciones y estadísticas generales.
 
-¿Cómo ejecutar?
+------------------------------------------------------------------
 
-Asegúrate de tener instalado Java JDK 17 o superior y MySQL.
+# ¿Cómo ejecutar?
 
-Clona este repositorio o descarga el código fuente.
+- Asegúrate de tener instalado Java JDK 17 o superior y MySQL.
 
-Crea la base de datos en MySQL con las tablas usuario, libro y prestamo.
+- Clona este repositorio o descarga el código fuente.
 
-Configura tu conexión en la clase db.java con tu usuario, contraseña y nombre de base de datos.
+- Crea la base de datos en MySQL con las tablas usuario, libro y prestamo.
 
-Compila y ejecuta el archivo Main.java:
+- Configura tu conexión en la clase db.java con tu usuario, contraseña y nombre de base de datos.
 
-javac Main.java
-java Main
+- Compila y ejecuta el archivo Main.java:
+      javac Main.java
+      java Main
 
 Futuras mejoras
 
