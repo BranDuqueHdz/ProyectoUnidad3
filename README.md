@@ -1,7 +1,7 @@
 # ProyectoUnidad3
 ## Biblioteca Digital - Java Swing + MySQL
 
-Esta es una aplicación de escritorio desarrollada en Java con Swing que simula el funcionamiento de una biblioteca digital. El sistema permite gestionar libros, usuarios y préstamos de forma concurrente, controlando la disponibilidad de ejemplares y aplicando penalizaciones en caso de retraso.
+Esta es una aplicación de escritorio desarrollada en Java con Swing que simula el funcionamiento de una biblioteca digital.El sistema permite gestionar libros, usuarios y préstamos de forma concurrente, controlando la disponibilidad de ejemplares y aplicando penalizaciones en caso de retraso.
 
 ------------------------------------------------------------------
 
@@ -12,15 +12,15 @@ Esta es una aplicación de escritorio desarrollada en Java con Swing que simula 
 - Gestión de libros: agregar, listar y actualizar stock de libros.
   
 - Préstamos de libros:
-      - Crear un préstamo seleccionando usuario y libro.
-      -Marcar préstamos como devueltos.
-      - Control de stock en tiempo real (evita que dos usuarios tomen el mismo libro al mismo tiempo).
+  - Crear un préstamo seleccionando usuario y libro.
+  - Marcar préstamos como devueltos.
+  - Control de stock en tiempo real (evita que dos usuarios tomen el mismo libro al mismo tiempo).
 
 - Penalizaciones: cálculo automático de penalización en caso de devoluciones con atraso.
   
 - Visualización de datos:
-      - Lista de préstamos activos y devueltos.
-      - Historial de penalizaciones.
+  - Lista de préstamos activos y devueltos.
+  - Historial de penalizaciones.
 
 - Concurrencia controlada mediante sincronización en los métodos de actualización de stock.
 
